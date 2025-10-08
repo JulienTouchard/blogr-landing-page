@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&family=Ubuntu:wght@300&display=swap');
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    --light-red: #ff525d;
+    --very-light-red: #ff7a85;
+    --very-dark-blue: #1f3f5b;
+    --very-dark-desaturated: #3f4164;
+    --docwidth: 90%;
+}
+
+img,
+input {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*+++++++++++++++++++++++++++++ HEADER ET NAV ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ HEADER ET NAV ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ HEADER ET NAV ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ HEADER ET NAV ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ HEADER ET NAV ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ HEADER ET NAV ++++++++++++++++++++++++++++++++++++*/
+header {
+    color: #fff;
+    height: 80vh;
+    background-color: #ff525d;
+    background-color: linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+    background-color: -webkit-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+    background-color: -moz-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
+    background-image: url(../images/bg-pattern-intro-mobile.svg);
+    background-position: 35% 37%;
+    background-size: 343%;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 0px 82px;
+    -webkit-border-radius: 0px 0px 0px 82px;
+    -moz-border-radius: 0px 0px 0px 82px;
+}
+
+h1 {
+    width: var(--docwidth);
+    /* calc(var(--docwidth)-10%); */
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+header p {
+    width: var(--docwidth);
+    margin: auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 45px;
+    border: #fff solid 0.05rem;
+    background-color: #ffffff00;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    padding: .6rem 1rem;
+    margin: .5rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    border-radius: 45px;
+    border: #fff solid 0.05rem;
+    background-color: #ffffff;
+    color: var(--light-red);
+    font-family: 'Ubuntu', sans-serif;
+    padding: .6rem 1rem;
+    margin: .5rem;
+    font-weight: 600;
+}
+
+.btn-active {
+    border-radius: 45px;
+    border: #fff solid 0.05rem;
+    background-color: #ffffff;
+    color: var(--light-red);
+    font-family: 'Ubuntu', sans-serif;
+    padding: .6rem 1rem;
+    margin: .5rem;
+    font-weight: 600;
+}
+
+h1~div {
+    display: flex;
+    justify-content: center;
+}
+
+/*+++++++++++++++++++++++++++++ MAIN SECTIONS ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ MAIN SECTIONS ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ MAIN SECTIONS ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ MAIN SECTIONS ++++++++++++++++++++++++++++++++++++*/
+
+main {
+    /* Attention un width en vw (ex:width: 100%;) 
+    ne tient pas compte du box-sizing:border-box; */
+    width: 100%;
+    overflow: hidden;
+}
+
+#design,
+#design-bis {
+    text-align: center;
+    width: var(--docwidth);
+    margin: auto;
+}
+
+#design h2 {
+    padding: 3rem 0;
+}
+
+#design h3,
+#design-bis h3 {
+    padding: 1.5rem 0;
+}
+
+#design p,
+#design-bis p {
+    line-height: 1.5rem;
+}
+
+#design-bis div {
+    margin-top: 5rem;
+}
+
+#design-bis img {
+    transform: scale(140%);
+}
+
+/*+++++++++++++++++++++++++++++ SECTION SOTA ++++++++++++++++++++++++++++++++++++*/
+#sota {
+    color: #fff;
+    text-align: center;
+    /* Ctrl+F2 permet de selectionner toutes les occurences d'une meme
+    selection */
+    position: relative;
+    border-radius: 0px 82px 0px 82px;
+    -webkit-border-radius: 0px 82px 0px 82px;
+    -moz-border-radius: 0px 82px 0px 82px;
+    background-color: #1f3f5b;
+    background-color: linear-gradient(135deg, #1f3f5b 0%, #3f4164 80%);
+    background-color: -webkit-linear-gradient(135deg, #1f3f5b 0%, #3f4164 80%);
+    background-color: -moz-linear-gradient(135deg, #1f3f5b 0%, #3f4164 80%);
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-position: 35% 37%;
+    background-size: 343%;
+    background-repeat: no-repeat;
+    margin-top: 17rem;
+}
+
+#sota div {
+    position: absolute;
+    top: -40%;
+}
+
+#sota h2 {
+    width: var(--docwidth);
+    margin: auto;
+    padding-top: 13rem;
+}
+
+#sota p {
+    width: var(--docwidth);
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
+
+/*+++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++++++*/
+footer {
+    background-color: var(--very-dark-desaturated);
+    border-radius: 0px 82px 0px 0px;
+    -webkit-border-radius: 0px 82px 0px 0px;
+    -moz-border-radius: 0px 82px 0px 0px;
+}
+
+#menu-footer {
+    width: var(--docwidth);
+    margin: auto;
+    padding: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+#logo-footer {
+    padding: 20%;
+}
+
+#menu-footer ul {
+    list-style-type: none;
+    font-weight: 900;
+    padding: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#menu-footer li {
+    font-weight: 100;
+    padding: .2rem;
+}
+
+/*+++++++++++++++++++++++++++++ BP576PX ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ BP576PX ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ BP576PX ++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++ BP576PX ++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width:576px) {
+    body {
+        --docwidth: 75%;
+    }
+
+    header {
+        height: 60vh;
+        background-image: url(../images/bg-pattern-intro-desktop.svg);
+        background-position: 35% 37%;
+        background-size: 100%;
+    }
+
+    #innerdesign {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #innerdesign div,#innerdesign-bis div {
+        width: 50%;
+    }
+
+    #innerdesign img {
+        content: url(../images/illustration-editor-desktop.svg);
+        width: 170%;
+        transform: translateY(-15%);
+    }
+
+    #sota {
+        margin-top: 0rem;
+        display: flex;
+        height: 40vh;
+    }
+    #sota div,
+    #sota article {
+        position: static;
+        width: 50%;
+    }
+    #sota h2 {
+        padding-top: 10vh;
+    }
+    #sota img {
+        transform: scale(70%) translateY(-40%);
+    }
+    #innerdesign-bis{
+        display: flex;
+    }
+    #innerdesign-bis img{
+        content: url(../images/illustration-laptop-desktop.svg);
+        width: 170%;
+        transform: translate(-40%,-15%);
+    }
+    #menu-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    #logo-footer {
+        padding: 0;
+    }
+}

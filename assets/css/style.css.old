@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    --light-red: #ff525d;
+    --very-light-red: #ff7a85;
+    --very-dark-blue: #1f3f5b;
+    --docwidth : 92%;
+}
+
+img,
+input {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* HEADER */
+
+header {
+    height: 75vh;
+    background: var(--light-red);
+    background: linear-gradient(317deg, var(--light-red) 0%, var(--light-red) 40%, #ff7a85 80%);
+    background: -webkit-linear-gradient(317deg, var(--light-red) 0%, var(--light-red) 40%, #ff7a85 80%);
+    background: -moz-linear-gradient(317deg, var(--light-red) 0%, var(--light-red) 40%, #ff7a85 80%);
+    background-image: url(../images/bg-pattern-intro-mobile.svg);
+    background-color: var(--light-red);
+    background-position: 40% 35%;
+    background-size: 400%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 0 20%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+nav{
+/* Je m'appuie sur l'element Body (relatif)
+pour positionner la nav en absulute */
+    position: absolute;
+    top: 4rem;
+    width: var(--docwidth);
+    margin:0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#check{
+    display: none;
+}
+header ul,#navbtn{
+    display: none;
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    width: 80%;
+    margin: 2rem auto;
+}
+h1~p{
+    margin-bottom: 2rem;
+}
+.btn{
+    background-color: var(--light-red);
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px #fff solid;
+    padding: .5rem .7rem;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+.btnActive{
+    background-color: #fff;
+    color: var(--light-red);
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid var(--light-red);
+    padding: .5rem .7rem;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+.btn:hover{
+    background-color: #fff;
+    color: var(--light-red);
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid var(--light-red);
+    padding: .5rem .7rem;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+/* SECTION DESIGN */
+#design{
+    width: var(--docwidth);
+    margin: 0 auto;
+}
+#design h2{
+    text-align: center;
+    color: var(--very-dark-blue);
+    margin:  2rem auto;
+    width: var(--docwidth);
+}
+/* SECTION SOTA */
+#sota{
+    position: relative;
+    background: var(--very-dark-blue);
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-color: var(--light-red);
+    background-position: 40% 35%;
+    background-size: 400%;
+    background-repeat: no-repeat;
+    border-radius: 0 20% 0 20%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10rem auto 2rem auto;
+}
+#sota div{
+    position: absolute;
+    top: -50%;
+}
+
+
+
+
+@media screen and (min-width:576px) {
+    body{
+        --docwidth: 80%;
+    }
+    #innerdesign{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #innerdesign div {
+        width: 50%;
+    }
+    #innerdesign img {
+        position: relative;
+        top: -3rem;
+        width: 200%;
+        content: url(../images/illustration-editor-desktop.svg);
+    }
+
+
+}
